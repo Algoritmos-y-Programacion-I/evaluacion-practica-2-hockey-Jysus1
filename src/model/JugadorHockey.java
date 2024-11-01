@@ -1,6 +1,8 @@
 package model;
 
-public class JugadorHockey extends Persona implements DesplazarseEnPistaConPalo {
+import model.Posicion;
+
+public class JugadorHockey extends Persona implements IDesplazarseEnPistaConPalo {
     protected String nombre;
     protected int numero;
     protected Posicion posicion;

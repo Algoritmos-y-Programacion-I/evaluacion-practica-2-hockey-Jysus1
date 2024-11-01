@@ -46,13 +46,13 @@ public class Executable {
 			escaner.nextLine();
 
 			switch (option) {
-					case 1:
+					case 1: fixture(); 
 
 						break;
-					case 2:
+					case 2: preLoadInfo();
 
 						break;
-					case 3:
+					case 3: realizeMatch(); 
 
 						break;
 					case 4:
@@ -80,6 +80,25 @@ public class Executable {
 
         Executable mainApp = new Executable();
         mainApp.run(flag);
+
+    }
+
+    public void fixture() {
+        
+        controladora.fixture();
+
+    }
+
+    public void preLoadInfo() { 
+
+        
+        controladora.preLoadInfo();
+
+    }
+
+    public void realizeMatch() { 
+
+        System.out.println("Empieza el partido!");
 
     }
 
